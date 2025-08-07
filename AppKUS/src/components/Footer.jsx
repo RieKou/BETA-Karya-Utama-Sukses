@@ -10,7 +10,7 @@ function Footer() {
         </div>
         <div>
           <h3 className="text-xl font-semibold mb-2 text-yellow-400">Kontak</h3>
-          <p className="text-gray-400">Email: info@konsermu.com</p>
+          <p className="text-gray-400">Email: KaryaUtamaSukses889@gmail.com</p>
           <p className="text-gray-400">Telepon: +62 852-7801-6889</p>
         </div>
         <div>
