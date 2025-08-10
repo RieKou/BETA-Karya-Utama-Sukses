@@ -70,7 +70,7 @@ function App() {
         <div className="max-w-6xl mx-auto px-6 py-24 flex flex-col md:flex-row items-center justify-between gap-x-16">
           <div className="text-center md:text-left md:w-1/2 space-y-6 animate-fadeInUp">
             <h1 className="text-4xl md:text-5xl font-bold leading-tight animate-fadeInUp delay-100">
-              [BETA] Selamat Datang di <span className="bg-gradient-to-r from-yellow-300 to-yellow-600 bg-clip-text text-transparent transition-all duration-500">Karya Utama Sukses</span>
+              <span className='text-yellow-400'>[BETA]</span> Selamat Datang di <span className="bg-gradient-to-r from-yellow-300 to-yellow-600 bg-clip-text text-transparent transition-all duration-500">Karya Utama Sukses</span>
             </h1>
             <p className="text-lg md:text-xl text-gray-300 animate-fadeInUp delay-300">
               Temukan produk berkualitas kami dan dapatkan pengalaman terbaik.
