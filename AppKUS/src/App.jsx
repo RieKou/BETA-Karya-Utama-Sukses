@@ -7,11 +7,10 @@ import Tentang from './components/Tentang.jsx'
 import Testimoni from './components/Testimoni.jsx'
 import Option from './components/Option.jsx'
 import Footer from './components/Footer.jsx'
+import Map from './components/Map.jsx'
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const [search, setSearch] = useState("")
-
 
   return (
     <main className="font-sans min-h-screen bg-gray-900 text-white">
@@ -95,6 +94,8 @@ function App() {
       <Testimoni />
 
       <Option />
+
+      <Map />
 
       <Footer />
 

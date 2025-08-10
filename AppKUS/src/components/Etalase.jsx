@@ -1,4 +1,4 @@
-import produk1 from '../assets/PicSrcs/E-Potret-1.jpg'
+import produk1 from '../assets/PicSrcs/cat-tembok-hori.jpg'
 import produk2 from '../assets/PicSrcs/E-Potret-2.jpg'
 import produk3 from '../assets/PicSrcs/E-Potret-3.jpg'
 
@@ -6,7 +6,7 @@ function Etalase() {
   return (
     <section className="bg-gray-900 py-12">
       <div className="max-w-6xl mx-auto px-6">
-        <h2 className="text-3xl font-bold text-white mb-8">Etalase Produk</h2>
+        <h2 className="text-3xl font-bold text-white mb-8 text-center">Etalase Produk</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           
           <div className="bg-gray-800 p-6 rounded-lg shadow-md">
@@ -59,7 +59,15 @@ function Etalase() {
 
         </div>
       </div>
+
+      <div className="flex justify-center items-center pt-6">
+        <button className="mt-4 bg-[#FFD700] hover:bg-yellow-600 text-black hover:text-white font-semibold px-6 py-3 rounded text-lg transition duration-200 flex justify-center items-center">
+          Selengkapnya
+        </button>
+      </div>
+
     </section>
+    
   )
 }
 

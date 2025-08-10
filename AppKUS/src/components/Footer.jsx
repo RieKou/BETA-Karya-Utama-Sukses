@@ -18,7 +18,7 @@ function Footer() {
           <div className="flex justify-center md:justify-start space-x-4 mt-2">
             <a href="#" className="hover:text-blue-400">Facebook</a>
             <a href="#" className="hover:text-blue-400">Instagram</a>
-            <a href="#" className="hover:text-blue-400">Twitter</a>
+            <a href="#" className="hover:text-blue-400">Tiktok</a>
           </div>
         </div>
       </div>

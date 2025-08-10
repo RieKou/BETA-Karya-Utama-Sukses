@@ -26,7 +26,7 @@ function Testimoni() {
   return (
     <section className="bg-gray-900 py-12">
       <div className="max-w-6xl mx-auto px-6">
-        <h2 className="text-3xl font-bold text-white mb-8">Pendapat Pelanggan</h2>
+        <h2 className="text-3xl font-bold text-white mb-8 text-center">Pendapat Pelanggan</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {testimonials.map((t, i) => (
             <motion.div
