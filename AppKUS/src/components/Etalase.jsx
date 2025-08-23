@@ -22,7 +22,7 @@ function Etalase() {
               />
             </div>
             <h3 className="text-xl font-semibold text-white">Semen</h3>
-            <p className="text-gray-400">Semen Padang, Semen Merdeka, dst.</p>
+            <p className="text-gray-400">Semen Padang, Semen Merdeka, dll.</p>
           </div>
 
           <div className="bg-gray-800 p-6 rounded-lg shadow-md">
@@ -38,7 +38,7 @@ function Etalase() {
               />
             </div>
             <h3 className="text-xl font-semibold text-white">Cat Tembok</h3>
-            <p className="text-gray-400">No Drop, Fabio, dst.</p>
+            <p className="text-gray-400">No Drop, Fabio, dll.</p>
           </div>
 
           <div className="bg-gray-800 p-6 rounded-lg shadow-md">
@@ -54,7 +54,7 @@ function Etalase() {
               />
             </div>
             <h3 className="text-xl font-semibold text-white">Papan Triplek</h3>
-            <p className="text-gray-400">3mm, 4mm, 6mm, dst.</p>
+            <p className="text-gray-400">3mm, 4mm, 6mm, dll.</p>
           </div>
 
         </div>
