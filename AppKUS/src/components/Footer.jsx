@@ -5,7 +5,7 @@ function Footer() {
         <div>
           <h3 className="text-xl font-semibold mb-2 text-yellow-400">Ringkasan</h3>
           <p className="text-gray-400">
-            Kami menyediakan berbagai material bangunan dan alat-alat berkualitas dengan harga terjangkau.
+            Kami menyediakan berbagai material bangunan dan alat-alat listrik berkualitas dengan harga terjangkau.
           </p>
         </div>
         <div>
