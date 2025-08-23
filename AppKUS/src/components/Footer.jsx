@@ -3,14 +3,14 @@ function Footer() {
     <footer className="bg-gray-800 text-white py-8">
       <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
         <div>
-          <h3 className="text-xl font-semibold mb-2 text-yellow-400">Tentang Kami</h3>
+          <h3 className="text-xl font-semibold mb-2 text-yellow-400">Ringkasan</h3>
           <p className="text-gray-400">
-            Kami menyediakan berbagai perlengkapan rumah tangga berkualitas dengan harga terjangkau.
+            Kami menyediakan berbagai perlengkapan listrik dan material bangunan berkualitas dengan harga terjangkau.
           </p>
         </div>
         <div>
           <h3 className="text-xl font-semibold mb-2 text-yellow-400">Kontak</h3>
-          <p className="text-gray-400">Email: KaryaUtamaSukses889@gmail.com</p>
+          <p className="text-gray-400">Email: karyautamasukses889@gmail.com</p>
           <p className="text-gray-400">Telepon: +62 852-7801-6889</p>
         </div>
         <div>
