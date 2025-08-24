@@ -64,7 +64,7 @@ function App() {
             <NavLink to="/Etalase" className="hover:text-yellow-400 transition font-bold">
               Etalase
             </NavLink>
-            <a href="https://wa.me/+6285278016889" className="hover:text-yellow-400 transition font-bold">
+            <a href="https://wa.me/+6285278016889" target="_blank" rel='noopener noreferrer' className="hover:text-yellow-400 transition font-bold">
               Hubungi
             </a>
           </nav>
@@ -78,7 +78,7 @@ function App() {
             <NavLink to="/etalase" className="block hover:text-yellow-400">
               Etalase
             </NavLink>
-            <a href="https://wa.me/+6285278016889" className="block hover:text-yellow-400">
+            <a href="https://wa.me/+6285278016889" target="_blank" rel='noopener noreferrer' className="block hover:text-yellow-400">
               Hubungi
             </a>
           </div>

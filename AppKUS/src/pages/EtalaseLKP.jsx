@@ -30,7 +30,7 @@ function App() {
           <nav className="hidden md:flex space-x-6 text-base font-semibold">
             <NavLink to="/Beranda" className="hover:text-yellow-400 transition font-bold">Beranda</NavLink>
             <NavLink to="/Etalase" className="hover:text-yellow-400 transition font-bold">Etalase</NavLink>
-            <a href="https://wa.me/+6285278016889" className="hover:text-yellow-400 transition font-bold">Hubungi</a>
+            <a href="https://wa.me/+6285278016889" target="_blank" rel='noopener noreferrer' className="hover:text-yellow-400 transition font-bold">Hubungi</a>
           </nav>
         </header>
 
@@ -38,7 +38,7 @@ function App() {
           <div className="md:hidden px-6 mt-4 space-y-4 font-semibold">
             <NavLink to="/Beranda" className="block hover:text-yellow-400">Beranda</NavLink>
             <NavLink to="/Etalase" className="block hover:text-yellow-400">Etalase</NavLink>
-            <a href="https://wa.me/+6285278016889" className="block hover:text-yellow-400">Hubungi</a>
+            <a href="https://wa.me/+6285278016889" target="_blank" rel='noopener noreferrer' className="block hover:text-yellow-400">Hubungi</a>
           </div>
         )}
       </section>
