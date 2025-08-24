@@ -1,6 +1,7 @@
 import produk1 from '../assets/PicSrcs/cat-tembok-hori.jpg'
 import produk2 from '../assets/PicSrcs/E-Potret-2.jpg'
 import produk3 from '../assets/PicSrcs/E-Potret-3.jpg'
+import { NavLink } from 'react-router-dom'
 
 function Etalase() {
   return (
@@ -38,7 +39,7 @@ function Etalase() {
               />
             </div>
             <h3 className="text-xl font-semibold text-white">Cat Tembok</h3>
-            <p className="text-gray-400">No Drop, Fabio, dll.</p>
+            <p className="text-gray-400">No Drop, Nippon Paint, dll.</p>
           </div>
 
           <div className="bg-gray-800 p-6 rounded-lg shadow-md">
@@ -61,9 +62,11 @@ function Etalase() {
       </div>
 
       <div className="flex justify-center items-center pt-6">
-        <button className="mt-4 bg-[#FFD700] hover:bg-yellow-600 text-black hover:text-white font-semibold px-6 py-3 rounded text-lg transition duration-200 flex justify-center items-center">
-          Selengkapnya
-        </button>
+        <NavLink to="/Etalase">
+          <button className="mt-4 bg-[#FFD700] hover:bg-yellow-600 text-black hover:text-white font-semibold px-6 py-3 rounded text-lg transition duration-200 flex justify-center items-center">
+            Selengkapnya
+          </button>
+        </NavLink>
       </div>
 
     </section>

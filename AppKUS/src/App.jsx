@@ -1,5 +1,5 @@
 import './App.css'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Logo from './assets/PicSrcs/logo-hori.png'
 import Etalase1 from './assets/PicSrcs/Etalase-4.jpg'
 import Etalase from './components/Etalase'
@@ -8,6 +8,33 @@ import Testimoni from './components/Testimoni.jsx'
 import Option from './components/Option.jsx'
 import Footer from './components/Footer.jsx'
 import Map from './components/Map.jsx'
+import { NavLink } from 'react-router-dom' 
+
+function BackToTop() {
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    const toggleVisible = () => {
+      setVisible(window.scrollY > 300);
+    };
+    window.addEventListener('scroll', toggleVisible);
+    return () => window.removeEventListener('scroll', toggleVisible);
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  return (
+    <button
+      onClick={scrollToTop}
+      className={`fixed bottom-6 right-6 z-50 bg-yellow-400 hover:bg-yellow-600 text-black font-bold p-3 rounded-full shadow-lg transition-opacity duration-300 ${visible ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}
+      aria-label="Back to top"
+    >
+      ↑
+    </button>
+  );
+}
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -29,39 +56,31 @@ function App() {
               </svg>
             </button>
           </div>
-{/* 
-          <form
-            className="w-full md:w-auto mt-4 md:mt-0 flex flex-col md:flex-row items-center gap-2"
-            onSubmit={(e) => e.preventDefault()}
-          >
-            <input
-              type="text"
-              value={search}
-              onChange={(e) => setSearch(e.target.value)}
-              className="w-full md:w-64 px-4 py-2 rounded bg-white text-black focus:outline-none"
-              placeholder="Cari produk atau jasa..."
-            />
-            <button
-              type="submit"
-              className="w-full md:w-auto bg-yellow-400 hover:bg-yellow-500 text-black hover:text-white font-semibold px-4 py-2 rounded transition"
-            >
-              Search
-            </button>
-          </form> */}
 
           <nav className="hidden md:flex space-x-6 text-base font-semibold">
-            <a href="#" className="hover:text-yellow-400 transition font-bold">Beranda</a>
-            <a href="#" className="hover:text-yellow-400 transition font-bold">Etalase</a>
-            <a href="https://wa.me/+6285278016889" className="hover:text-yellow-400 transition font-bold">Hubungi</a>
+            <NavLink to="/Beranda" className="hover:text-yellow-400 transition font-bold" end>
+              Beranda
+            </NavLink>
+            <NavLink to="/Etalase" className="hover:text-yellow-400 transition font-bold">
+              Etalase
+            </NavLink>
+            <a href="https://wa.me/+6285278016889" className="hover:text-yellow-400 transition font-bold">
+              Hubungi
+            </a>
           </nav>
         </header>
 
         {isMenuOpen && (
           <div className="md:hidden px-6 mt-4 space-y-4 font-semibold">
-            <a href="#" className="block hover:text-yellow-400">Beranda</a>
-            <a href="#" className="block hover:text-yellow-400">Etalase</a> 
-            <a href="https://wa.me/+6285278016889" className="block hover:text-yellow-400">Hubungi</a>
-            <a></a>
+            <NavLink to="/" className="block hover:text-yellow-400" end>
+              Beranda
+            </NavLink>
+            <NavLink to="/etalase" className="block hover:text-yellow-400">
+              Etalase
+            </NavLink>
+            <a href="https://wa.me/+6285278016889" className="block hover:text-yellow-400">
+              Hubungi
+            </a>
           </div>
         )}
       </section>
@@ -75,9 +94,11 @@ function App() {
             <p className="text-lg md:text-xl text-gray-300 animate-fadeInUp delay-300">
               Temukan produk berkualitas kami dan dapatkan pengalaman terbaik.
             </p>
-            <button className="mt-4 bg-[#FFD700] hover:bg-yellow-600 text-black hover:text-white font-semibold px-6 py-3 rounded text-lg transition duration-200">
-              Jelajahi Sekarang
-            </button>
+            <NavLink to="/Etalase">
+              <button className="mt-4 bg-[#FFD700] hover:bg-yellow-600 text-black hover:text-white font-semibold px-6 py-3 rounded text-lg transition duration-200">
+                Jelajahi Sekarang
+              </button>
+            </NavLink>
           </div>
           <div className="md:w-1/2 mt-10 md:mt-0 animate-fadeInRight">
             <div className="w-full h-64 md:h-80 bg-gray-700 rounded-lg flex items-center justify-center overflow-hidden">
@@ -98,6 +119,8 @@ function App() {
       <Map />
 
       <Footer />
+
+      <BackToTop />
 
     </main>
   )
