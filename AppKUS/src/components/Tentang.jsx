@@ -20,6 +20,7 @@ function Tentang() {
           className="text-3xl md:text-5xl font-extrabold text-yellow-400 leading-tight"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -50 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
@@ -32,6 +33,7 @@ function Tentang() {
           className="text-gray-300 text-base md:text-lg leading-relaxed"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -50 }}
           transition={{ duration: 1, delay: 0.2 }}
           viewport={{ once: true }}
         >

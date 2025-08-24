@@ -14,7 +14,9 @@ function App() {
 
       <section className="bg-gray-900 pt-6 pb-6 shadow-md">
         <header className="px-6 max-w-6xl mx-auto flex items-center justify-between">
-          <img src={Logo} className="w-44" alt="Logo" />
+          <NavLink to="/Beranda" className="hover:text-yellow-400 transition font-bold" end>
+            <img src={Logo} className="w-44" alt="Logo" />
+          </NavLink>
 
           <div className="md:hidden">
             <button
