@@ -13,8 +13,8 @@ createRoot(document.getElementById('root')).render(
       <Route index element={<App />} />
       <Route path="/Beranda" element={<App />} />
       <Route path="/Etalase" element={<EtalaseLKP />} />
-      {/* <Route path="/Etalase/Semen" element={<Semen />} />
-      <Route path="/Etalase/Cat" element={<Cat />} /> */}
+      {/* <Route path="/Semen" element={<Semen />} />
+      <Route path="/Cat" element={<Cat />} /> */}
     </Routes>
   </BrowserRouter>,
 )
