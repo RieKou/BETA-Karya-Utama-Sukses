@@ -3,6 +3,8 @@ import { useState } from 'react'
 import Logo from './assets/PicSrcs/logo-hori.png'
 import Beranda from './pages/Beranda.jsx'
 import EtalaseLKP from './pages/EtalaseLKP.jsx'
+import NotFound from './pages/NotFound.jsx'
+import './App.css'
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -55,10 +57,11 @@ function App() {
       </section>
 
       <Routes>
-        {/* redirect default */}
+
         <Route path="/" element={<Navigate to="/Beranda" replace />} />
         <Route path="/Beranda" element={<Beranda />} />
         <Route path="/Etalase" element={<EtalaseLKP />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </main>
   )

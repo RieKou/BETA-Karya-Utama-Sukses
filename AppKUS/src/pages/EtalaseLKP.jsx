@@ -27,7 +27,7 @@ function EtalaseLKP() {
             Etalase Produk
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <NavLink to="/Semen">
+            <NavLink to="/Etalase/Semen">
               <div className="bg-gray-800 p-6 rounded-lg shadow-md cursor-pointer hover:bg-gray-700 transition">
                 <div className="w-full aspect-square overflow-hidden rounded mb-4">
                   <img
@@ -45,7 +45,7 @@ function EtalaseLKP() {
               </div>
             </NavLink>
 
-            <NavLink to="/Cat">
+            <NavLink to="/Etalase/Cat">
               <div className="bg-gray-800 p-6 rounded-lg shadow-md cursor-pointer hover:bg-gray-700 transition">
                 <div className="w-full aspect-square overflow-hidden rounded mb-4">
                   <img
