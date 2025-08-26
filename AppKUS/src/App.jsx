@@ -3,7 +3,8 @@ import { useState } from 'react'
 import Logo from './assets/PicSrcs/logo-hori.png'
 import Beranda from './pages/Beranda.jsx'
 import EtalaseLKP from './pages/EtalaseLKP.jsx'
-import NotFound from './pages/NotFound.jsx'
+import InProgress from './pages/InProgress.jsx'
+// import NotFound from './pages/NotFound.jsx'
 import './App.css'
 
 function App() {
@@ -61,7 +62,7 @@ function App() {
         <Route path="/" element={<Navigate to="/Beranda" replace />} />
         <Route path="/Beranda" element={<Beranda />} />
         <Route path="/Etalase" element={<EtalaseLKP />} />
-        <Route path="*" element={<NotFound />} />
+        <Route path="*" element={<InProgress />} />
       </Routes>
     </main>
   )
