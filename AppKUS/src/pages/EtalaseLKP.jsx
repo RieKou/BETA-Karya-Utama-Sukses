@@ -4,6 +4,7 @@ import produk1 from "../assets/PicSrcs/card-semen-3.jpg"
 import produk2 from "../assets/PicSrcs/card-cat-1.jpg"
 import produk3 from "../assets/PicSrcs/E-Potret-3.jpg"
 import '../App.css'
+import Footer from "../components/Footer.jsx"
 
 function EtalaseLKP() {
   return (
@@ -79,6 +80,7 @@ function EtalaseLKP() {
       </section>
 
       <Outlet />
+      <Footer />
     </main>
   )
 }
