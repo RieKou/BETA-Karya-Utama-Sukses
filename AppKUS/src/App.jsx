@@ -6,6 +6,9 @@ import EtalaseLKP from './pages/EtalaseLKP.jsx'
 import InProgress from './pages/InProgress.jsx'
 // import NotFound from './pages/NotFound.jsx'
 import './App.css'
+import Semen from './pages/hal-produk/Semen.jsx'
+import Cat from './pages/hal-produk/Cat.jsx'
+// import Triplek from '.pages/hal-produk/Triplek.jsx'
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -58,10 +61,13 @@ function App() {
       </section>
 
       <Routes>
-
         <Route path="/" element={<Navigate to="/Beranda" replace />} />
         <Route path="/Beranda" element={<Beranda />} />
-        <Route path="/Etalase" element={<EtalaseLKP />} />
+        <Route path="/Etalase" element={<EtalaseLKP />}>
+          <Route path="Semen" element={<Semen />} />
+          <Route path="Cat" element={<Cat />} />
+          <Route path="Triplek" element={<InProgress />}/>
+        </Route>
         <Route path="*" element={<InProgress />} />
       </Routes>
     </main>

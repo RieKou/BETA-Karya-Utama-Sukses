@@ -23,7 +23,7 @@ function Footer() {
         </div>
       </div>
       <div className="mt-8 text-center text-gray-500 text-sm">
-        &copy; {new Date().getFullYear()} Karya Utama Sukses. All rights reserved.
+        {new Date().getFullYear()} &copy; Karya Utama Sukses. All rights reserved.
       </div>
     </footer>
   )

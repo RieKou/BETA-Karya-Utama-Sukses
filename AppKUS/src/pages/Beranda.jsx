@@ -8,6 +8,7 @@ import Etalase1 from '../assets/PicSrcs/Etalase-4.jpg'
 import { NavLink } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import '../App.css'
+import ScrollAtas from '../components/ScrollAtas'
 
 function BackToTop() {
   const [visible, setVisible] = useState(false)
@@ -36,6 +37,7 @@ function BackToTop() {
 function Beranda() {
   return (
     <>
+    <ScrollAtas />
       <section className="relative bg-gray-800">
         <div className="max-w-6xl mx-auto px-6 py-24 flex flex-col md:flex-row items-center justify-between gap-x-16">
           <div className="text-center md:text-left md:w-1/2 space-y-6 animate-fadeInUp">
