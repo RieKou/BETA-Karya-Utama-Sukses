@@ -1,5 +1,5 @@
 import { motion } from "framer-motion"
-import TentangImage from "../assets/PicSrcs/Etalase-2.jpg"
+import TentangImage from "../assets/PicSrcs/Etalase-2.png"
 
 function Tentang() {
   return (

@@ -1,5 +1,5 @@
 import { NavLink, Outlet } from "react-router-dom"
-import BGEtalase from "../assets/PicSrcs/Etalase-0.jpg"
+import BGEtalase from "../assets/PicSrcs/Etalase-3.png"
 import produk1 from "../assets/PicSrcs/card-semen-3.jpg"
 import produk2 from "../assets/PicSrcs/card-cat-1.jpg"
 import produk3 from "../assets/PicSrcs/E-Potret-3.jpg"
@@ -79,7 +79,21 @@ function EtalaseLKP() {
         </div>
       </section>
 
+      <h1 className="text-3xl font-bold text-center my-16 px-6">
+        Barang-barang lain akan segera menyusul...
+      </h1>
+
       <Outlet />
+
+      {/* <div className="justify-center flex mb-16">
+        <NavLink 
+          to="/Beranda" 
+          className="px-6 py-3 bg-yellow-300 text-gray-900 font-bold rounded-xl hover:bg-yellow-500 hover:text-white transition"
+        >
+          Kembali ke Beranda
+        </NavLink>
+      </div> */}
+
       <Footer />
     </main>
   )
